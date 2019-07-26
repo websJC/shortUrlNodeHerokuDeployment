@@ -39,7 +39,7 @@ app.use('/', routes());
 //Para Heroku, cogerá el host de variables de entorno o 0.0.0.0 lo cual
 //le facilitará a la app coger el que le asigne Heroku
 const host = process.env.HOST || '0.0.0.0';
-const host = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port,host, () => {
     console.log(`Servidor en el puerto:`)
