@@ -32,7 +32,7 @@ formulario.addEventListener('submit', async e => {
         contenedor.appendChild(mensaje);
     }
 
-});
+})
 const urlParams = new URLSearchParams(window.location.search);
 if(urlParams.has('error')){
     const mensaje = document.createElement('div');
