@@ -7,8 +7,6 @@ const routes = require('./router');
 //importar variables de entorno locales
 require('dotenv').config({ path:'variables.env'});
 
-
-
 const app = express();
 
 //Body parser para leer los datos del form
@@ -42,5 +40,6 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 3000;
 
 app.listen(port,host, () => {
-    console.log(`Servidor en el puerto:`)
+    console.log(`Servidor en el puerto: `,port);
+    console.log(`Servidor en el host: `,host);
 });
